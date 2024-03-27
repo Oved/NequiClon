@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".movimientoDeRecargas">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.98">
+
+
+        <ImageButton
+            android:id="@+id/movimientos"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#331275"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_movimientos"
+            android:text="Inicio" />
+
+        <ImageButton
+            android:id="@+id/logotel"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:onClick="MovimientosARecargar"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_logotel" />
+
+        <ImageButton
+            android:id="@+id/inicio"
+            android:layout_width="105dp"
+            android:layout_height="50dp"
+            android:onClick="MovimientosAinicioHome"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_home"
+            android:text="Inicio" />
+
+        <ImageButton
+            android:id="@+id/logousuario"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:onClick="MovimientosAPerfil"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_logousuario" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listRecyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
